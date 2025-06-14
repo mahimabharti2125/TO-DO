@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url("TO-DO-IMAGE/bg1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.container{
+  box-shadow: 3px 3px 10px brown;
+  backdrop-filter: blur(1px);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  width:100%;
+   max-width: 400px;
+}
+h2{
+  color: rgb(247, 28, 145);
+  margin-bottom: 15px;
+  padding-left: 100px;
+}
+.input-area{
+  display: flex;
+  justify-content: space-between;
+ margin-left: 30px;
+  width:300px;
+  margin-bottom: 20px;
+ 
+}
+
+.input-area input{
+  background-color:rgba(245, 177, 194, 0.5);
+  border: none;
+  outline: none;
+  border-radius:20px;
+  width: 70%;
+  padding-left: 15px;
+  box-shadow: 2PX ,3PX,10PX,palevioletred;
+}
+.add-btn{
+background-color:rgb(241, 142, 167,0.7);
+border: none;
+outline: none;
+  border-radius:50%;
+  width: 27px;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+.add-btn:hover{
+  width: 35px;
+  height: 35px;
+  box-shadow: 2px 4px 15px rgb(251, 177, 190);
+}
+.material-symbols-outlined{
+  color:white; 
+}
+.to-do-container{
+  max-width: 300px;
+}
+ul li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solis palevioletred;
+  background-color:rgba(2, 33, 49, 0.6) ;
+  list-style-type:none ;
+  margin:10px;
+  border-radius: 22px;
+  gap: 10px;
+  color: white;
+  font-size: 1.1rem;
+  height:30px;
+  width: 300px;
+}
+ul li .checkbox{
+  min-width:15px;
+  height:15px;
+  margin-left: 6px;
+   border: 2px solid rgba(255,255,255,0.3);
+  background: transparent;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+
+}
+
+ul li .checkbox:checked{
+  background-color: rgb(4, 17, 35);
+  transform: scale(1.1);
+  
+}
+
+ul li .checkbox:checked ~ span{
+  text-decoration:line-through;
+  text-decoration-color: black;
+}
+
+.editbtn{
+  justify-content: space-evenly;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.editbtn button {
+
+  color:rgb(247, 242, 242);
+  border: none;
+width: 27px;
+height:27px;
+border-radius: 50%;
+color: white;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.editbtn .del{
+  background-color:rgba(244, 56, 56, 0.797) ;
+}
+.editbtn .del:hover{
+  background-color:rgba(75, 1, 1, 0.797) ;
+  box-shadow: 3px 3px 10px rgb(87, 86, 86);
+  transform: scale(1.1rem);
+}
+
+ .empty{
+  width: 300px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+.progres_bar{
+  /* border: 2px solid black; */
+  width: 250px;
+  height: 100px;
+  margin-left:30px ;
+ max-width: 400px;
+ margin-bottom: 10px;
+}
+.pro{
+  display: flex;
+  justify-content:space-between;
+  align-items: center
+}
+.circle{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+    background-color: rgb(247, 28, 145,0.5);
+  position: relative;
+}
+.up{
+   color: rgb(247, 28, 145);
+   font-size: large;
+   font-weight: 600;
+}
+input[type="range" i]{
+  background: rgb(247, 8, 8);
+}
+.circle .div{
+  /* position: absolute;
+  top: 400px;
+  color: black;
+  border: ; */
+  position: relative;
+  top: 16px;
+  left:16px;
+  display: flex;
+  width: 60px;
+  height: 10px;
+
+}
+.range{
+  
+  background-color: rgb(242, 72, 6);
+  height: 8px;
+  border-radius: 25px;
+}
+.prob{
+  width: 170px;
+  background-color: rgb(246, 138, 186);
+  height: 8px;
+  border-radius: 25px;
+}
